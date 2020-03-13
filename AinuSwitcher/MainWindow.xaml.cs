@@ -33,7 +33,7 @@ namespace AinuSwitcher
             var serverIp = await GeneralHelper.GetAinuAddressAsync();
             if (serverIp == string.Empty)
             {
-                MessageBox.Show("An error occurred while retrieving Ainu's IP. Maybe check your Internet connection?" + Environment.NewLine +
+                MessageBox.Show("Could not fetch IP from Shibui website. Check your internet connection?" + Environment.NewLine +
                     "Stored IP address will be used");
                 serverIp = Constants.AinuHardcodedIp;
             }
@@ -84,7 +84,7 @@ namespace AinuSwitcher
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while connecting to Ainu. If you still can't connect and have tried disabling your antivirus, please ask for help either in our discord!"
+                MessageBox.Show("An error occurred while connecting to Shibui. If you still can't connect and have tried disabling your antivirus, please ask for help either in our discord!"
                 + string.Format("\r\n\r\nDetails:\r\n{0}", ex.Message));
                 Logger.Log(ex);
             }
@@ -125,7 +125,7 @@ namespace AinuSwitcher
 
         private void websiteText_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://ainu.pw");
+            System.Diagnostics.Process.Start("https://shibui.pw");
         }
 
         private void titleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
