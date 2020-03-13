@@ -7,13 +7,13 @@ using System.Windows;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Ainu! Switcher")]
-[assembly: AssemblyDescription("Ainu! the best osu! server")]
+[assembly: AssemblyTitle("osu!shibui switcher")]
+[assembly: AssemblyDescription("the connector for osu!shibui")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ainu! Switcher")]
-[assembly: AssemblyCopyright("Copyright © Aoba Suzukaze 2019")]
-[assembly: AssemblyTrademark("Ainu(TM)")]
+[assembly: AssemblyProduct("osu!shibui switcher")]
+[assembly: AssemblyCopyright("Copyright © Shibui 2020")]
+[assembly: AssemblyTrademark("Shibui")]
 [assembly: AssemblyCulture("")]
 
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
