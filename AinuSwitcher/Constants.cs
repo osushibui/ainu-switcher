@@ -4,23 +4,23 @@ namespace AinuSwitcher
     public class Constants
     {
         // Use this address if we cannot grab from ips.txt
-        public const string AinuHardcodedIp = "18.225.10.113";
+        public const string AinuHardcodedIp = "18.220.131.50";
 
         // Grab address from here when possible
-        public const string AinuIpApiAddress = "https://old.ainu.pw/ips.txt";
+        public const string AinuIpApiAddress = "https://shibui.pw/static/ips.txt";
 
-        public const string UiInstallCertificate = "Install Certificate";
+        public const string UiInstallCertificate = "Verify Certificate";
 
-        public const string UiUninstallCertificate = "Delete Certificate";
+        public const string UiUninstallCertificate = "Unverify Certificate";
 
-        public const string UiYouArePlayingOnAinu = "You're connected to Ainu!";
+        public const string UiYouArePlayingOnAinu = "Connected to osu! shibui";
 
-        public const string UiYouArePlayingOnOfficial = "You're playing on Bancho";
+        public const string UiYouArePlayingOnOfficial = "Connected to Bancho";
 
-        public const string UiSwitchToAinu = "Connect to Ainu!";
+        public const string UiSwitchToAinu = "Switch to osu!shibui";
 
-        public const string UiSwitchToOfficial = "Disconnect from Ainu!";
+        public const string UiSwitchToOfficial = "Switch to Bancho";
 
-        public const string UiUpdatingStatus = "Retrieving addresses..";
+        public const string UiUpdatingStatus = "Loading...";
     }
 }
