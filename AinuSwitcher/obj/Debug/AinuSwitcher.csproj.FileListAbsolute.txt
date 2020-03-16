@@ -1,0 +1,15 @@
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\bin\Debug\AinuSwitcher.exe.config
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\bin\Debug\AinuSwitcher.exe
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\bin\Debug\AinuSwitcher.pdb
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.csprojAssemblyReference.cache
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\ButtonStyles.baml
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\MainWindow.baml
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\App.baml
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\MainWindow.g.cs
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\App.g.cs
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher_MarkupCompile.cache
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.g.resources
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.Properties.Resources.resources
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.csproj.GenerateResource.cache
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.exe
+C:\Users\maxip\Desktop\switcher-master\AinuSwitcher\obj\Debug\AinuSwitcher.pdb

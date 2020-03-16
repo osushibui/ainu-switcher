@@ -8,7 +8,7 @@
             <DropShadowEffect BlurRadius="10" Opacity=".5" RenderingBias="Performance" ShadowDepth="2"/>
         </Grid.Effect>
 
-        <Grid x:Name="layoutGrid" Background="#FF442D6D" Margin="10">
+        <Grid x:Name="layoutGrid" Background="#FF279AC5" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
@@ -17,15 +17,14 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid x:Name="titleBar" Background="#FFBB005B" MouseLeftButtonDown="titleBar_MouseLeftButtonDown">
+            <Grid x:Name="titleBar" Background="#FF279AC5" MouseLeftButtonDown="titleBar_MouseLeftButtonDown">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="Ainu Switcher" VerticalContentAlignment="Center" FontSize="16" Foreground="White" TextOptions.TextFormattingMode="Display" Background="#FF310735" />
-                <Button x:Name="closeButton" Grid.Column="1" Style="{StaticResource ResourceKey=flatButton}" Background="#FF310735" Click="closeButton_Click">
+                <Button x:Name="closeButton" Style="{StaticResource ResourceKey=flatButton}" Background="#FF279AC5" Click="closeButton_Click" Grid.Column="1">
                     <Grid>
-                        <Rectangle Height="20" Width="2" Fill="White" RenderTransformOrigin="0.5,0.5" >
+                        <Rectangle Height="10" Width="1" Fill="White" RenderTransformOrigin="0.5,0.5" >
                             <Rectangle.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -35,7 +34,7 @@
                                 </TransformGroup>
                             </Rectangle.RenderTransform>
                         </Rectangle>
-                        <Rectangle Height="20" Width="2" Fill="White" RenderTransformOrigin="0.5,0.5" >
+                        <Rectangle Height="10" Width="1" Fill="White" RenderTransformOrigin="0.5,0.5" >
                             <Rectangle.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -49,16 +48,36 @@
                 </Button>
             </Grid>
 
-            <Label x:Name="statusLabel" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                   FontSize="14" Foreground="White"/>
+            <Label x:Name="statusLabel" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                   FontSize="14" Foreground="White" Background="#FF279AC5" Margin="0,0,0,2" HorizontalAlignment="Center" Width="330"/>
 
-            <Button x:Name="switchButton" Grid.Row="2" Style="{StaticResource ResourceKey=awesomeButton}" Click="switchButton_Click" />
+            <Button x:Name="switchButton" Grid.Row="1" Style="{StaticResource ResourceKey=awesomeButton}" Click="switchButton_Click" Margin="18,19,18,21" Background="Gray" Grid.RowSpan="2">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
+                </Button.Effect>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                        <Setter Property="Padding" Value="10,2,10,3"/>
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
             <Button x:Name="certButton" Grid.Row="3" Style="{StaticResource ResourceKey=awesomeButton}"
-                    Click="sertButton_Click"/>
+                    Click="sertButton_Click" Margin="18,0,18,10" Background="White" BorderBrush="#FFDEDEDE">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
+                </Button.Effect>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                        <Setter Property="Padding" Value="10,2,10,3"/>
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
-            <TextBlock x:Name="websiteText" Grid.Row="4" Text="ainu.pw" HorizontalAlignment="Right" VerticalAlignment="Center" 
-                       TextDecorations="Underline" Margin="4" Cursor="Hand" MouseLeftButtonDown="websiteText_MouseLeftButtonDown" Foreground="White" FontSize="14"/>
 
         </Grid>
     </Grid>
