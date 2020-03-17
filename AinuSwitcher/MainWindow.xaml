@@ -8,7 +8,7 @@
             <DropShadowEffect BlurRadius="10" Opacity=".5" RenderingBias="Performance" ShadowDepth="2"/>
         </Grid.Effect>
 
-        <Grid x:Name="layoutGrid" Background="#FF279AC5" Margin="10">
+        <Grid x:Name="layoutGrid" Background="#FF2760C5" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
@@ -17,12 +17,12 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid x:Name="titleBar" Background="#FF279AC5" MouseLeftButtonDown="titleBar_MouseLeftButtonDown">
+            <Grid x:Name="titleBar" Background="#FF1C3F9B" MouseLeftButtonDown="titleBar_MouseLeftButtonDown">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="30"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="closeButton" Style="{StaticResource ResourceKey=flatButton}" Background="#FF279AC5" Click="closeButton_Click" Grid.Column="1">
+                <Button x:Name="closeButton" Style="{StaticResource ResourceKey=flatButton}" Background="#FF1C3F9B" Click="closeButton_Click" Grid.Column="1">
                     <Grid>
                         <Rectangle Height="10" Width="1" Fill="White" RenderTransformOrigin="0.5,0.5" >
                             <Rectangle.RenderTransform>
@@ -49,9 +49,9 @@
             </Grid>
 
             <Label x:Name="statusLabel" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                   FontSize="14" Foreground="White" Background="#FF279AC5" Margin="0,0,0,2" HorizontalAlignment="Center" Width="330"/>
+                   FontSize="14" Foreground="White" Background="#FF1C3F9B" Margin="0,0,0,2" HorizontalAlignment="Center" Width="330"/>
 
-            <Button x:Name="switchButton" Grid.Row="1" Style="{StaticResource ResourceKey=awesomeButton}" Click="switchButton_Click" Margin="18,19,18,21" Background="Gray" Grid.RowSpan="2">
+            <Button x:Name="switchButton" Grid.Row="1" Style="{StaticResource ResourceKey=awesomeButton}" Click="switchButton_Click" Margin="18,17,18,23" Background="Gray" Grid.RowSpan="2">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
                 </Button.Effect>
@@ -63,9 +63,9 @@
                     </Style>
                 </Button.Resources>
             </Button>
-
-            <Button x:Name="certButton" Grid.Row="3" Style="{StaticResource ResourceKey=awesomeButton}"
-                    Click="sertButton_Click" Margin="18,0,18,10" Background="White" BorderBrush="#FFDEDEDE">
+            <TextBlock x:Name="websiteText" Text="shibui.pw" TextDecorations="None" Margin="10,6,266,10" Foreground="White" Cursor="Hand" MouseLeftButtonDown="websiteText_MouseLeftButtonDown"/>
+            <Button x:Name="certButton" Grid.Row="2" Style="{StaticResource ResourceKey=awesomeButton}"
+                    Click="sertButton_Click" Margin="18,27,18,17" Background="White" BorderBrush="#FFDEDEDE" Grid.RowSpan="2">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
                 </Button.Effect>
